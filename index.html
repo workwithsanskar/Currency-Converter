@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter - Convert your Currency</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome CDN Link for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="circle circle-purple"></div>
+    <div class="circle circle-blue"></div>
+    <div class="main-container">
+      <header class="head">Currency Converter</header>
+       <form action="#">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="1">
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <p>From</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/flat/64.png" alt="countryflag">
+              <select name="from">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <!-- <option value="NPR">NPR</option>
+                <option value="PKR">PKR</option>
+                <option value="MAD">MAD</option> -->
+              </select>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <div class="to">
+            <p>To</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/IN/flat/64.png" alt="countryflag">
+              <select name="to">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <!-- <option value="NPR">NPR</option>
+                <option value="PKR">PKR</option>
+                <option value="MAD">MAD</option> -->
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">Loading...</div>
+        <button>Get Exchange Rate</button>
+       </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
